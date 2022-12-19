@@ -1,4 +1,4 @@
-def F(n):
+def f(n):
     if n < 3:
         return 1
     elif n > 2 and n % 2 == 0:
@@ -7,4 +7,4 @@ def F(n):
         return F(n - 2) + 2 * n - 2
 
 
-print(F(31))
+print(f(31))
