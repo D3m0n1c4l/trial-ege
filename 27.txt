@@ -1,0 +1,24 @@
+a = open('Задание 27 А.txt')
+b = open('Задание 27 B.txt')
+S = 0
+S1 = 0
+mini = 10001
+mini1 = 10001
+n = int(a.readline())
+for i in range(n):
+    m = max(map(int, a.readline().split()))
+    if m < mini:
+        mini = m
+    S += m
+if S % 5 == 0:
+    S -= mini
+print(S)
+n1 = int(b.readline())
+for i1 in range(n1):
+    m1 = max(map(int, b.readline().split()))
+    if m1 < mini1:
+        mini1 = m1
+    S1 += m1
+if S1 % 5 == 0:
+    S1 -= mini1
+print(S1)

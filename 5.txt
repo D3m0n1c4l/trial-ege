@@ -1,0 +1,13 @@
+f = True
+n = 1
+while f:
+    N = str(bin(n))
+    if N.count('1') % 2 == 0:
+        N += '10'
+    else:
+        N += '00'
+    R = int(N, 2)
+    n += 1
+    if R > 54:
+        print(R)
+        f = False
